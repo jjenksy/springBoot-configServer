@@ -1,0 +1,15 @@
+---
+#use username and pass so the repo can be private
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/jjenksy/spring-cloud-config
+          #username:
+          #password:
+          search-paths:
+          - 'station*'
+
+server:
+  port: 8888
